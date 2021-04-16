@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import About from "./components/About";
+import Awards from "./components/Awards";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
+import Interest from "./components/Interest";
+import Skill from "./components/Skill";
+import Sidebar from "./components/Sidebar";
+import "./style.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Sidebar />
+        <div className="Bobo">
+          <About />
+          <Awards />
+          <Education />
+          <Experience />
+          <Interest />
+          <Skill />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;

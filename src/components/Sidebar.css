@@ -1,0 +1,65 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(224, 151, 41);
+  /* overflow-x: hidden; */
+  padding-top: 20px;
+}
+
+.tittle {
+  text-align: center;
+}
+
+.text {
+  height: 100vh;
+}
+
+.sidenav a {
+  text-align: center;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #0e0d0d;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.avatar {
+  margin-top: 20%;
+  margin-left: 9%;
+  margin-bottom: 10%;
+  vertical-align: middle;
+  /* width: 15%;
+  height: 15%; */
+  border-radius: 100%;
+  /* padding-left: 5%; */
+}
+
+.card {
+  box-shadow: rgb(76, 67, 53);
+  transition: 0.3s;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 97%;
+  margin-left: 2%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 30px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
